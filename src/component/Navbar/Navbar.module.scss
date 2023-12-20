@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background-color:  #296073;
+  box-shadow: 1px -2px 17px 2px #1c1b1bc4;
+  
+  a {
+
+    display: flex;
+    align-items: center;
+    color: #ADC5CF;
+
+    p {
+      font-size: 2.7em;
+      margin-right: .2em;
+      font-weight: 800;
+    }
+    
+    span {
+      font-size: 3.1em;
+      color: #845EC2;
+      font-weight: bold;
+      font-weight: 800; 
+    }
+  }
+
+  ul {
+    display: flex;
+
+    a {
+      font-size: 1  em;
+      padding: 20px 20px ;
+      transition: .4s;
+
+      &:hover {
+        background-color: #3596B5;
+        
+      }
+    }
+
+  }
+}
+
+
+
