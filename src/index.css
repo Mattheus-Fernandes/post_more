@@ -10,3 +10,13 @@
 body {
   background-color: #845EC2;
 }
+
+
+.messageError {
+  color: #d70505;
+  background-color: rgb(217 145 145);
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 2px solid #d70505;
+  margin-top: 10px;
+}
