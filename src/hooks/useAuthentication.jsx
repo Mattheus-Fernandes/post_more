@@ -73,7 +73,38 @@ export const useAuthentication = () => {
 
   }
 
-  return {auth, createUser, error, loading, logout}
+  const login = async (data) => {
+    
+    checkIfIsCancelled()
+
+    setLoading(true)
+    setError(false)
+
+    try {
+
+      await signInWithEmailAndPassword(auth, data.email, data.password)
+      setLoading(false)
+
+    }catch(error){
+      
+      let systemMessageError
+
+      if(error.message.includes("user-not-found")){
+        systemMessageError = "Usuário não encontrado"
+      }else if(error.message.includes("wrong-password")){
+        systemMessageError = "Senha incorreta !"
+      }else {
+        systemMessageError = "Ocorreu um error, por favor tente mais tarde"
+      }
+
+      setError(systemMessageError)
+      setLoading(false)
+
+    }
+
+  }
+
+  return {auth, createUser, error, loading, logout, login}
 
 } 
 
