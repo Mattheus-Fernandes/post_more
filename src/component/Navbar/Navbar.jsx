@@ -1,11 +1,13 @@
 import styles from "./Navbar.module.scss"
 import { NavLink } from 'react-router-dom';
 import {useAuthValue} from "../../context/useAuthContext"
+import { useAuthentication } from "../../hooks/useAuthentication";
 
 
 const Navbar = () => {
 
   const {user} = useAuthValue()
+  const {logout} = useAuthentication()
 
   return (
     <nav className={styles.navbar}>
@@ -40,6 +42,9 @@ const Navbar = () => {
         <li>
           <NavLink to="/about">Sobre</NavLink>
         </li>
+        {user && (
+          <button onClick={logout}>Sair</button>
+        )}
       </ul>
     </nav>
   )
