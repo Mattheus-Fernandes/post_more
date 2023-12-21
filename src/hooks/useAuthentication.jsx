@@ -66,7 +66,14 @@ export const useAuthentication = () => {
   }, [])
 
 
-  return {auth, createUser, error, loading}
+  const logout = () => {
+
+    checkIfIsCancelled()
+    signOut(auth)
+
+  }
+
+  return {auth, createUser, error, loading, logout}
 
 } 
 
