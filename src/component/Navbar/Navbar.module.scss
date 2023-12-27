@@ -54,6 +54,10 @@
       color: #ADC5CF;
       cursor: pointer;
       
+      &:hover{
+        background-color: #3596B5;
+        border-bottom-right-radius: 20px;
+      }
       
     }
 
