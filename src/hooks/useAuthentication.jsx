@@ -1,5 +1,3 @@
-import { databae } from "../firebase/config";
-
 import {
   getAuth,
   createUserWithEmailAndPassword,
