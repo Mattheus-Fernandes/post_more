@@ -1,0 +1,32 @@
+.postDetails {
+  margin-top: 3em;
+  margin-bottom: 5em;
+ 
+  img {
+    width: 500px;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+
+  div {
+    display: flex;
+    margin-bottom: .5em;
+    
+   p {
+    margin-right: .5em;
+    font-weight: bold;
+   }
+  }
+
+  a {
+    margin-top: 20px;
+    background-color: #2a6073;
+    padding: 8px 20px;
+    border-radius: 2px;
+    color: #aec5cf;
+    font-weight: 600;
+  }
+}
+
