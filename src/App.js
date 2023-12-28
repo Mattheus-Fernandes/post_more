@@ -11,7 +11,8 @@ import Register from './pages/Register/Register';
 import Login from './pages/Login/Login';
 import Dashboard from "./pages/Dashboard/Dashboard";
 import NewPost from "./pages/NewPost/NewPost";
-
+import Search from './pages/Search/Search';
+import Post from './pages/Post/Post';
 //CONTEXT
 import { AuthProvider } from './context/useAuthContext';
 
@@ -47,6 +48,8 @@ function App() {
           <Navbar />
           <Routes>
             <Route path='/' element={<Home />}/>
+            <Route path="/search" element={<Search />} />
+            <Route path="/posts/:id" element={<Post />} />
             <Route path='/login' element={!user ? <Login /> : <Navigate to="/" />} />
             <Route path='/register' element={!user ? <Register /> : <Navigate to="/" />} />
             <Route path='/posts/create' element={user ? <NewPost /> : <Navigate to="/login"/>} />
