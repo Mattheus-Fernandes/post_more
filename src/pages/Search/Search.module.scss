@@ -1,0 +1,29 @@
+.search {
+  margin-top: 3em;
+  margin-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 3em;
+  }
+
+  img {
+    width: 500px;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+  
+  a {
+    margin-top: 20px;
+    background-color: #2a6073;
+    padding: 8px 20px;
+    border-radius: 2px;
+    color: #aec5cf;
+    font-weight: 600;
+  }
+}
+
