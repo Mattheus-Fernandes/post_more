@@ -1,0 +1,34 @@
+.about {
+  margin-top: 3em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 3em;
+    margin-bottom: 1em;
+  }
+
+  p {
+    margin-bottom: 2em;
+  }
+
+  a {
+    background-color: #2a6073;
+    padding: 8px 20px;
+    border-radius: 2px;
+    color: #aec5cf;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+}
+
+
+
+.about a {
+  display: block;
+  margin-top: 15px;
+  padding: 10px 15px;
+}
