@@ -33,7 +33,7 @@ const Home = () => {
           <PostDetails key={post.id} post={post} />
         ))}  
         {posts && posts.length === 0 && (
-          <div>
+          <div className={styles.notFound}>
             <p>OPS!! Não foram encontrados posts</p>
             <Link to="/posts/create">Criar primeiro post</Link>
           </div>
