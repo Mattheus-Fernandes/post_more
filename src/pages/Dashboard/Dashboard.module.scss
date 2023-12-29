@@ -1,0 +1,83 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3em;
+
+  h1 {
+    font-size: 3em;
+    margin-bottom: 1em;
+  }
+
+  p {
+    color: #000000b2;
+  }
+
+  .notFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      font-size: 2em;
+      margin-top: 2em;
+      margin-bottom: 1em;
+    }
+
+    a {
+      background-color: #2a6073;
+      padding: 8px 20px;
+      border-radius: 2px;
+      color: #aec5cf;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+
+  .square {
+    margin-top: 3em;
+    width: 50%;
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2em;
+      border-bottom: 1px solid black;
+
+      span {
+        margin-bottom: 1em;
+        font-weight: bold;
+      }
+    }
+
+    .action {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1em;
+      div {
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+
+        a {
+          background-color: #2a6073;
+          padding: 8px 20px;
+          border-radius: 2px;
+          color: #aec5cf;
+          font-weight: 600;
+          cursor: pointer;
+        }
+
+        .delete {
+          background-color: rgb(238, 84, 84);
+          color: white;
+          outline: none;
+          border: none;
+          border-radius: 2px;
+          padding: 8px 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+}
