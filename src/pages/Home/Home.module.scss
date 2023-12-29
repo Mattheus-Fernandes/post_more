@@ -37,6 +37,27 @@
     }
 
   }
+
+  .notFound {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      font-size: 2em;
+      margin-bottom: 1em;
+    }
+
+    a {
+      background-color: #2a6073;
+      padding: 8px 20px;
+      border-radius: 2px;
+      color: #aec5cf;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
   
 }
 
