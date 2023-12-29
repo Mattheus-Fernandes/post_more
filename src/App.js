@@ -22,6 +22,7 @@ import { useAuthentication } from './hooks/useAuthentication';
 import { BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import { onAuthStateChanged } from '@firebase/auth';
 import { useState, useEffect } from 'react';
+import EditPost from './pages/EditPost/EditPost';
 
 function App() {
 
@@ -54,6 +55,7 @@ function App() {
             <Route path='/register' element={!user ? <Register /> : <Navigate to="/" />} />
             <Route path='/posts/create' element={user ? <NewPost /> : <Navigate to="/login"/>} />
             <Route path='/dashboard' element={user ? <Dashboard /> : <Navigate to="/login"/>} />
+            <Route path='/posts/edit/:id' element={user ? <EditPost /> : <Navigate to=""/>} />
             <Route path='/about' element={<About />} />
           </Routes>
         </BrowserRouter>
